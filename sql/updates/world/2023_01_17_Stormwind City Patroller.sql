@@ -30,4 +30,4 @@ INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_
 
 
 
-UPDATE `world`.`creature_template_addon` SET `bytes1`=0 WHERE  `entry`=2457;
+UPDATE `creature_template_addon` SET `bytes1`=0 WHERE  `entry`=2457;

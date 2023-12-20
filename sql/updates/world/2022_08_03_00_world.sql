@@ -69,9 +69,9 @@ INSERT INTO `creature_text` (`Entry`, `GroupID`, `ID`, `Text`, `Type`, `Language
 -- Implementados estos 3 eventos
 DELETE FROM `game_event` WHERE `eventEntry` in (200,201,202);
 INSERT INTO `game_event` (`eventEntry`, `start_time`, `end_time`, `occurence`, `length`, `holiday`, `description`, `world_event`) VALUES 
-(200, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 2592000, 5, 0, 'Kloaka - Banquet', 0),
-(201, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 2592000, 5, 0, 'Kloaka - Turtle', 0),
-(202, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 2592000, 5, 0, 'Kloaka - Shimmering Whorl', 0);
+(200, '2020-01-01 10:00:00', '2030-01-02 06:00:00', 2592000, 5, 0, 'Kloaka - Banquet', 0),
+(201, '2020-01-01 10:00:00', '2030-01-02 06:00:00', 2592000, 5, 0, 'Kloaka - Turtle', 0),
+(202, '2020-01-01 10:00:00', '2030-01-02 06:00:00', 2592000, 5, 0, 'Kloaka - Shimmering Whorl', 0);
 
 DELETE FROM `game_event_creature` WHERE `eventEntry`in (200,201);
 INSERT INTO `game_event_creature` (`eventEntry`, `guid`) VALUES 
@@ -191,8 +191,8 @@ UPDATE `creature` SET `spawntimesecs` = 60 WHERE `id` = 110661;
 
 DELETE FROM `game_event` WHERE `eventEntry` in (80,81);
 INSERT INTO `game_event` (`eventEntry`, `start_time`, `end_time`, `occurence`, `length`, `holiday`, `description`, `world_event`) VALUES 
-(80, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 2592000, 0, 0, 'Kloaka - PVP On', 0),
-(81, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 2592000, 0, 0, 'Kloaka - PVP Off ', 0);
+(80, '2019-02-09 10:00:00', '2030-01-02 06:00:00', 2592000, 0, 0, 'Kloaka - PVP On', 0),
+(81, '2019-02-09 10:00:00', '2030-01-02 06:00:00', 2592000, 0, 0, 'Kloaka - PVP Off ', 0);
 
 
 DELETE FROM `outdoorpvp_template` WHERE `TypeId`=16;

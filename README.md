@@ -5,7 +5,7 @@ boost 1.64
 openssl 1.1.1s
 cmake 3.25.0
 
-Version 7.3.5 
+Version 7.3.5 26124
 
 Системы:
 - Гарнизон/Классный зал (WIP)
